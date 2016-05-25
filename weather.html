@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>weather forecast</title>
+	<meta charset = "utf-8">
+	<link rel="stylesheet" type="text/css" href="weather.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="weather.js"></script>
+</head>
+<body onselectstart = "return false;">
+    <div id="wrap">  
+        <p class="today" id="today"></p>
+	    <input type="text"  placeholder="请输入城市名称" id="inputcity">
+	    <input type="submit" id="submitcity" onclick="findweather()">
+    	<img src="background.jpg" class="back">
+    	<p class="city" id="city"></p>
+    	<img src="{{img}}" id="todaylogo">
+    	<table id="weathertemp">
+    	  <tr id="weathertemptitle">
+    	  	<td>天气</td>
+    	  	<td>温度</td>
+    	  	<td>最高温度</td>
+    	  	<td>最低温度</td>
+    	  </tr>
+    	  <tr id="weathertempinfor">
+    	  	<td id="weather"></td>
+    	  	<td id="temp"></td>
+    	  	<td id="temphigh"></td>
+    	  	<td id="templow"></td>
+    	  </tr>
+       </table>
+       <div class="forecast">
+       	  <div id="one">
+       	 <!--  	<div id="forecastweather">
+       	  		<p class="day" id="day"></p>
+       	  		<p class="weekday" id="weekday"></p>
+       	  		<img src="1.png" id="forecastlogo">
+       	  		<p class="weatherinfor" id="weatherinfor"></p>
+       	  		<p class="forecasttemp" id="forecasttemp"></p>
+       	  	</div> -->
+       	  </div>
+       	  <div id="two"></div>
+       	  <div id="three"></div>
+       	  <div id="four"></div>
+       	  <div id="five"></div>
+       	  <div id="six"></div>
+       </div>
+    </div>
+</body>
+</html>
